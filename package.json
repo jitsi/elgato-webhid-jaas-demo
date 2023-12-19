@@ -1,0 +1,17 @@
+{
+  "name": "elgato-webhid-jaas-demo",
+  "version": "0.1.0",
+  "description": "Advanced JaaS meeting controls with Elgato Stream Deck",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "esbuild src/index.js --bundle --format=esm --outfile=www/app.js --inject:esbuild.inject.js --serve --servedir=www"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@elgato-stream-deck/webhid": "^6.0.0",
+    "buffer": "^6.0.3",
+    "esbuild": "^0.19.5",
+    "events": "^3.3.0"
+  }
+}
